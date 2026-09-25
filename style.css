@@ -165,7 +165,7 @@ ul { padding: 0; list-style: none; }
   pointer-events: none;
 }
 .hero-grid-bg {
-  position: absolute; z-index: -2; inset: 0;
+  position: absolute; z-index: -2; inset: 0; pointer-events: none;
   background-image:
     linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
@@ -248,6 +248,7 @@ ul { padding: 0; list-style: none; }
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow);
   font-size: 13px; font-weight: 700; white-space: nowrap;
+  pointer-events: none; /* selo decorativo: nunca intercepta toques */
   animation: floaty 6s ease-in-out infinite;
 }
 .float-chip .ico { color: var(--accent); }

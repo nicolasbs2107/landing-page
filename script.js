@@ -8,7 +8,7 @@
 
 // WHATSAPP — ALTERAR: seu link do WhatsApp. TODOS os CTAs usam esta variável.
 // Formato: "https://wa.me/5511999999999" (55 + DDD + número, somente números)
-const WHATSAPP_URL = "COLOCAR_LINK_AQUI";
+const WHATSAPP_URL = "https://wa.me/5538956354947";
 
 // Mensagem inicial enviada ao abrir a conversa
 const WHATSAPP_MESSAGE =
@@ -86,26 +86,39 @@ function trackWhatsAppClick(source) {
 function setupWhatsApp() {
   const link = buildWhatsAppLink();
 
+  // Nova aba só no desktop. Em celular (e principalmente nos navegadores internos
+  // do Instagram/Facebook) o target="_blank" costuma ser bloqueado e o toque
+  // parece "não fazer nada" — por isso ali o link abre na própria aba.
+  const openInNewTab = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
   if (!link) {
-    console.warn("[Comandaí] Defina WHATSAPP_URL no script.js (ex.: https://wa.me/5511999999999).");
+    console.error(
+      "[Comandaí] WHATSAPP_URL ainda está com o valor de exemplo. " +
+      "Edite a constante no topo do script.js (ex.: https://wa.me/5511999999999) " +
+      "para os botões abrirem o WhatsApp."
+    );
   }
 
   document.querySelectorAll(".whatsapp-lead").forEach((btn) => {
     if (link) {
       btn.setAttribute("href", link);
-      btn.setAttribute("target", "_blank");
       btn.setAttribute("rel", "noopener noreferrer");
+      if (openInNewTab) {
+        btn.setAttribute("target", "_blank");
+      } else {
+        btn.removeAttribute("target");
+      }
     }
 
     btn.addEventListener("click", (event) => {
       if (!link) {
         event.preventDefault();
-        console.warn("[Comandaí] WhatsApp ainda não configurado.");
+        console.error("[Comandaí] WHATSAPP_URL não configurado: o botão não abre o WhatsApp.");
         return;
       }
       const source = btn.dataset.source || "cta";
       trackWhatsAppClick(source);
-      // Não bloqueia a navegação: o link abre normalmente em nova aba.
+      // Não bloqueia a navegação: o link abre normalmente.
     });
   });
 }
