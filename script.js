@@ -8,7 +8,7 @@
 
 // WHATSAPP — ALTERAR: seu link do WhatsApp. TODOS os CTAs usam esta variável.
 // Formato: "https://wa.me/5511999999999" (55 + DDD + número, somente números)
-const WHATSAPP_URL = "https://wa.me/5538956354947";
+const WHATSAPP_URL = "COLOCAR_LINK_AQUI";
 
 // Mensagem inicial enviada ao abrir a conversa
 const WHATSAPP_MESSAGE =

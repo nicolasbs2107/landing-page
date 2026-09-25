@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -9,8 +8,7 @@
        SEO
        ========================================================= -->
   <title>Comandaí — Cardápio digital para pizzarias, hamburguerias e restaurantes</title>
-  <meta name="description"
-    content="Comandaí: cardápios digitais para pizzarias, hamburguerias e restaurantes. Cardápio próprio, gerenciamento pelo painel e pedidos organizados. Fale comigo no WhatsApp.">
+  <meta name="description" content="Comandaí: cardápios digitais para pizzarias, hamburguerias e restaurantes. Cardápio próprio, gerenciamento pelo painel e pedidos organizados. Fale comigo no WhatsApp.">
   <meta name="theme-color" content="#0a0a0c">
   <meta name="robots" content="index, follow">
   <!-- Quando tiver o domínio definitivo, descomente e ajuste:
@@ -26,8 +24,7 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Comandaí">
   <meta property="og:title" content="Comandaí — Seu cardápio digital, com a cara do seu negócio">
-  <meta property="og:description"
-    content="Cardápios digitais para pizzarias, hamburguerias e restaurantes. Fale comigo e eu te mostro como funciona.">
+  <meta property="og:description" content="Cardápios digitais para pizzarias, hamburguerias e restaurantes. Fale comigo e eu te mostro como funciona.">
   <meta property="og:image" content="assets/cardapio-mockup.png">
   <!-- <meta property="og:url" content="https://SEU-DOMINIO.com.br/"> -->
   <meta name="twitter:card" content="summary_large_image">
@@ -39,8 +36,7 @@
   <!-- Fonte (uma família, display=swap para não travar a renderização) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Screenshot do hero carregado com prioridade -->
   <link rel="preload" as="image" href="assets/cardapio-mockup.png">
@@ -56,18 +52,14 @@
        - Lead + WhatsAppClick: disparados no script.js ao clicar em um CTA de WhatsApp.
        ========================================================= -->
   <script>
-    window.META_PIXEL_ID = "1089758150462103";
+    window.META_PIXEL_ID = "COLOCAR_PIXEL_ID_AQUI";
 
     if (/^\d{6,}$/.test(window.META_PIXEL_ID)) {
-      !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return; n = f.fbq = function () {
-          n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        }; if (!f._fbq) f._fbq = n;
-        n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
-        t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
-      }(window,
-        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', window.META_PIXEL_ID);
       fbq('track', 'PageView');
     }
@@ -92,39 +84,13 @@
   <!-- Ícones SVG reutilizáveis -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <defs>
-      <symbol id="i-check" viewBox="0 0 24 24">
-        <path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </symbol>
-      <symbol id="i-arrow" viewBox="0 0 24 24">
-        <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </symbol>
-      <symbol id="i-chat" viewBox="0 0 24 24">
-        <path
-          d="M12 3.5c-4.8 0-8.5 3.4-8.5 7.7 0 2.2 1 4.2 2.7 5.6L5.5 20.5l4-1.8c.8.2 1.7.3 2.5.3 4.8 0 8.5-3.4 8.5-7.8S16.8 3.5 12 3.5z"
-          fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-        <path d="M8.5 11.2h.01M12 11.2h.01M15.5 11.2h.01" stroke="currentColor" stroke-width="2.6"
-          stroke-linecap="round" />
-      </symbol>
-      <symbol id="i-phone" viewBox="0 0 24 24">
-        <rect x="6.5" y="2.5" width="11" height="19" rx="2.5" fill="none" stroke="currentColor" stroke-width="2" />
-        <path d="M10.5 18.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-      </symbol>
-      <symbol id="i-panel" viewBox="0 0 24 24">
-        <rect x="3" y="4" width="18" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="2" />
-        <path d="M9 4v16M13 9h4.5M13 13h4.5M13 17h2.5" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" />
-      </symbol>
-      <symbol id="i-bag" viewBox="0 0 24 24">
-        <path d="M5 8h14l-1 12.5H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-        <path d="M9 10V7a3 3 0 0 1 6 0v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-      </symbol>
-      <symbol id="i-mark" viewBox="0 0 24 24">
-        <path d="M6 4.5h12a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 18V6A1.5 1.5 0 0 1 6 4.5z"
-          fill="none" stroke="currentColor" stroke-width="2" />
-        <path d="M8.5 9h7M8.5 12h7M8.5 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M12 3.5c-4.8 0-8.5 3.4-8.5 7.7 0 2.2 1 4.2 2.7 5.6L5.5 20.5l4-1.8c.8.2 1.7.3 2.5.3 4.8 0 8.5-3.4 8.5-7.8S16.8 3.5 12 3.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 11.2h.01M12 11.2h.01M15.5 11.2h.01" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 4v16M13 9h4.5M13 13h4.5M13 17h2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12.5H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 10V7a3 3 0 0 1 6 0v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-mark" viewBox="0 0 24 24"><path d="M6 4.5h12a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5H6A1.5 1.5 0 0 1 4.5 18V6A1.5 1.5 0 0 1 6 4.5z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 9h7M8.5 12h7M8.5 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
     </defs>
   </svg>
 
@@ -136,19 +102,16 @@
       <!-- LOGO — se assets/logo.png existir, ele substitui o nome em texto automaticamente -->
       <a href="#topo" class="brand" aria-label="Comandaí — início">
         <img class="brand-logo" src="assets/logo.png" alt="Comandaí" width="150" height="36"
-          onload="this.parentNode.classList.add('has-logo')" onerror="this.remove()">
+             onload="this.parentNode.classList.add('has-logo')" onerror="this.remove()">
         <span class="brand-fallback">
-          <span class="brand-mark" aria-hidden="true"><svg>
-              <use href="#i-mark" />
-            </svg></span>
+          <span class="brand-mark" aria-hidden="true"><svg><use href="#i-mark"/></svg></span>
           <span class="brand-name">Comand<b>aí</b></span>
         </span>
       </a>
 
-      <a href="#" class="btn btn-primary btn-sm whatsapp-lead" data-source="header">
-        <svg class="ico">
-          <use href="#i-chat" />
-        </svg><span><span class="hide-xs">Falar no </span>WhatsApp</span>
+      <!-- CTA do header: escondido no mobile via CSS (.header-cta) para não competir com o CTA da hero -->
+      <a href="#" class="btn btn-primary btn-sm header-cta whatsapp-lead" data-source="header">
+        <svg class="ico"><use href="#i-chat"/></svg><span>Falar no WhatsApp</span>
       </a>
     </div>
   </header>
@@ -164,36 +127,23 @@
 
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span> Comandaí · Cardápios digitais para
-            pizzarias, hamburguerias e restaurantes</p>
+          <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span> Comandaí · Cardápios digitais para pizzarias, hamburguerias e restaurantes</p>
 
-          <h1 id="hero-title" class="reveal">Seu cardápio digital, com a <span class="text-grad">cara do seu
-              negócio.</span></h1>
+          <h1 id="hero-title" class="reveal">Receba seus pedidos de forma <span class="text-grad">mais simples e profissional.</span></h1>
 
-          <p class="lead reveal">Tenha seu próprio cardápio digital e deixe seus clientes montarem o pedido de forma
-            simples e organizada.</p>
+          <p class="lead reveal">Tenha seu próprio cardápio digital, gerencie produtos e preços pelo painel e receba os pedidos pelo WhatsApp.</p>
 
           <ul class="hero-checks reveal" role="list">
-            <li><svg class="ico">
-                <use href="#i-check" />
-              </svg> Cardápio digital próprio</li>
-            <li><svg class="ico">
-                <use href="#i-check" />
-              </svg> Gerenciamento pelo painel</li>
-            <li><svg class="ico">
-                <use href="#i-check" />
-              </svg> Pedidos organizados</li>
+            <li><svg class="ico"><use href="#i-check"/></svg> Cardápio digital próprio</li>
+            <li><svg class="ico"><use href="#i-check"/></svg> Painel administrativo</li>
+            <li><svg class="ico"><use href="#i-check"/></svg> Pedidos pelo WhatsApp</li>
           </ul>
 
           <div class="hero-cta reveal">
             <a href="#" class="btn btn-primary btn-xl whatsapp-lead" data-source="hero">
-              QUERO CONHECER A COMANDAÍ <svg class="ico">
-                <use href="#i-arrow" />
-              </svg>
+              QUERO VER COMO FUNCIONA <svg class="ico"><use href="#i-arrow"/></svg>
             </a>
-            <p class="cta-note"><svg class="ico">
-                <use href="#i-chat" />
-              </svg> Fale diretamente comigo e eu te mostro como funciona.</p>
+            <p class="cta-note"><svg class="ico"><use href="#i-chat"/></svg> Fale diretamente com Nicolas pelo WhatsApp. Sem compromisso.</p>
           </div>
         </div>
 
@@ -202,9 +152,8 @@
             <div class="phone-screen">
               <!-- SCREENSHOT REAL DO CARDÁPIO — ALTERAR: assets/cardapio-mockup.png
                    (print vertical do celular, proporção ~9:19.5) -->
-              <img src="assets/cardapio-mockup.png"
-                alt="Cardápio digital da Comandaí aberto no celular, com produtos, fotos e preços" width="709"
-                height="1222" fetchpriority="high" onerror="this.remove()">
+              <img src="assets/cardapio-mockup.png" alt="Cardápio digital da Comandaí aberto no celular, com produtos, fotos e preços"
+                   width="709" height="1222" fetchpriority="high" onerror="this.remove()">
               <div class="shot-placeholder" aria-hidden="true">
                 <i class="sk sk-cover"></i><i class="sk sk-pills"></i>
                 <i class="sk sk-row"></i><i class="sk sk-row"></i><i class="sk sk-row"></i><i class="sk sk-row"></i>
@@ -212,56 +161,14 @@
               </div>
             </div>
           </div>
-          <span class="float-chip chip-1"><svg class="ico ico-green">
-              <use href="#i-check" />
-            </svg> Pedido organizado</span>
-          <span class="float-chip chip-2"><svg class="ico">
-              <use href="#i-phone" />
-            </svg> Feito para celular</span>
+          <span class="float-chip chip-1"><svg class="ico ico-green"><use href="#i-check"/></svg> Pedido organizado</span>
+          <span class="float-chip chip-2"><svg class="ico"><use href="#i-phone"/></svg> Feito para celular</span>
         </div>
       </div>
     </section>
 
     <!-- =========================================================
-         2. EXPLICAÇÃO CURTA
-         ========================================================= -->
-    <section class="section intro" aria-labelledby="intro-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <h2 id="intro-title">Seu cardápio. Sua identidade. <span class="text-grad">Mais praticidade.</span></h2>
-          <p class="section-sub">A Comandaí cria uma experiência de cardápio digital personalizada para o seu
-            estabelecimento, com uma área administrativa para você gerenciar as principais informações do seu negócio.
-          </p>
-        </header>
-
-        <div class="cards">
-          <article class="card reveal">
-            <span class="card-ico"><svg>
-                <use href="#i-phone" />
-              </svg></span>
-            <h3>Cardápio digital</h3>
-            <p>Seus produtos organizados em um cardápio moderno e responsivo.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card-ico"><svg>
-                <use href="#i-panel" />
-              </svg></span>
-            <h3>Painel administrativo</h3>
-            <p>Gerencie produtos, preços e informações do seu estabelecimento.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card-ico"><svg>
-                <use href="#i-bag" />
-              </svg></span>
-            <h3>Pedidos organizados</h3>
-            <p>O cliente monta o pedido e você recebe as informações de forma organizada.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
-         3. PREVIEW DO SISTEMA (apenas imagens — sem acesso ao sistema)
+         2. PREVIEW DO SISTEMA (o produto aparece logo após a hero) (apenas imagens — sem acesso ao sistema)
          ========================================================= -->
     <section class="section preview" aria-labelledby="preview-title">
       <div class="container">
@@ -277,9 +184,7 @@
         <figure class="preview-item reveal">
           <div class="phone">
             <div class="phone-screen">
-              <img src="assets/cardapio-1.png"
-                alt="Cardápio digital no celular com produtos em destaque, fotos, descrições e preços" loading="lazy"
-                width="709" height="1222" onerror="this.remove()">
+              <img src="assets/cardapio-1.png" alt="Cardápio digital no celular com produtos em destaque, fotos, descrições e preços" loading="lazy" width="709" height="1222" onerror="this.remove()">
               <div class="shot-placeholder" aria-hidden="true">
                 <i class="sk sk-pills"></i><i class="sk sk-row"></i><i class="sk sk-row"></i><i class="sk sk-row"></i>
                 <span class="sk-label">cardapio-1.png</span>
@@ -296,12 +201,9 @@
         <figure class="preview-item reveal">
           <div class="phone">
             <div class="phone-screen">
-              <img src="assets/cardapio-2.png"
-                alt="Finalização do pedido com nome, forma de recebimento, pagamento e botão para enviar pelo WhatsApp"
-                loading="lazy" width="720" height="1241" onerror="this.remove()">
+              <img src="assets/cardapio-2.png" alt="Finalização do pedido com nome, forma de recebimento, pagamento e botão para enviar pelo WhatsApp" loading="lazy" width="720" height="1241" onerror="this.remove()">
               <div class="shot-placeholder" aria-hidden="true">
-                <i class="sk sk-line w60"></i><i class="sk sk-opt"></i><i class="sk sk-opt"></i><i
-                  class="sk sk-opt"></i><i class="sk sk-btn"></i>
+                <i class="sk sk-line w60"></i><i class="sk sk-opt"></i><i class="sk sk-opt"></i><i class="sk sk-opt"></i><i class="sk sk-btn"></i>
                 <span class="sk-label">cardapio-2.png</span>
               </div>
             </div>
@@ -317,9 +219,7 @@
           <div class="browser">
             <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>Painel Comandaí</span></div>
             <div class="browser-body">
-              <img src="assets/painel-admin.png"
-                alt="Dashboard do painel administrativo com resumo dos produtos do cardápio" loading="lazy" width="1300"
-                height="966" onerror="this.remove()">
+              <img src="assets/painel-admin.png" alt="Dashboard do painel administrativo com resumo dos produtos do cardápio" loading="lazy" width="1300" height="966" onerror="this.remove()">
               <div class="panel-placeholder" aria-hidden="true">
                 <div class="pp-side"><i></i><i></i><i></i><i></i><i></i></div>
                 <div class="pp-main">
@@ -338,18 +238,44 @@
           </figcaption>
         </figure>
       </div>
-      <p class="swipe-hint" aria-hidden="true">Deslize para ver as telas <svg class="ico">
-          <use href="#i-arrow" />
-        </svg></p>
+      <p class="swipe-hint" aria-hidden="true">Deslize para ver as telas <svg class="ico"><use href="#i-arrow"/></svg></p>
 
       <div class="container">
         <div class="preview-cta reveal">
           <p>Quer ver o sistema completo funcionando? <strong>Eu te mostro pessoalmente.</strong></p>
-          <a href="#" class="btn btn-primary btn-lg whatsapp-lead" data-source="preview">
-            QUERO VER COMO FUNCIONA <svg class="ico">
-              <use href="#i-arrow" />
-            </svg>
+          <a href="#" class="btn btn-primary btn-lg whatsapp-lead" data-source="produto">
+            QUERO VER COMO FUNCIONA <svg class="ico"><use href="#i-arrow"/></svg>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. EXPLICAÇÃO CURTA
+         ========================================================= -->
+    <section class="section intro" aria-labelledby="intro-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 id="intro-title">Seu cardápio. Sua identidade. <span class="text-grad">Mais praticidade.</span></h2>
+          <p class="section-sub">A Comandaí cria uma experiência de cardápio digital personalizada para o seu estabelecimento, com uma área administrativa para você gerenciar as principais informações do seu negócio.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-ico"><svg><use href="#i-phone"/></svg></span>
+            <h3>Cardápio digital</h3>
+            <p>Seus produtos organizados em um cardápio moderno e responsivo.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-ico"><svg><use href="#i-panel"/></svg></span>
+            <h3>Painel administrativo</h3>
+            <p>Gerencie produtos, preços e informações do seu estabelecimento.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-ico"><svg><use href="#i-bag"/></svg></span>
+            <h3>Pedidos organizados</h3>
+            <p>O cliente monta o pedido e você recebe as informações de forma organizada.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -369,13 +295,10 @@
             <li><span aria-hidden="true">🥪</span> Lanchonetes</li>
           </ul>
 
-          <p>Se seus clientes já entram em contato pelo WhatsApp para pedir cardápio, consultar preços ou fazer pedidos,
-            a Comandaí pode ajudar a organizar essa experiência.</p>
+          <p>Se seus clientes já entram em contato pelo WhatsApp para pedir cardápio, consultar preços ou fazer pedidos, a Comandaí pode ajudar a organizar essa experiência.</p>
 
           <a href="#" class="btn btn-primary btn-lg whatsapp-lead" data-source="para-quem-e">
-            QUERO CONHECER <svg class="ico">
-              <use href="#i-arrow" />
-            </svg>
+            QUERO CONHECER <svg class="ico"><use href="#i-arrow"/></svg>
           </a>
         </div>
       </div>
@@ -391,19 +314,15 @@
                (quadrada, rosto centralizado, mínimo 400x400).
                Enquanto a imagem não existir, aparece o placeholder com a inicial "N". -->
           <div class="avatar">
-            <img src="assets/nicolas.jpg" alt="Foto de Nicolas" width="400" height="400" loading="lazy"
-              onerror="this.remove()">
+            <img src="assets/nicolas.jpg" alt="Foto de Nicolas" width="400" height="400" loading="lazy" onerror="this.remove()">
             <span class="avatar-placeholder" aria-hidden="true">N</span>
           </div>
 
           <h2 id="final-title">Quer conhecer a Comandaí?</h2>
-          <p>Eu sou o Nicolas e vou te mostrar pessoalmente como a Comandaí funciona e como ela pode ser aplicada ao seu
-            estabelecimento.</p>
+          <p>Eu sou o Nicolas e vou te mostrar pessoalmente como a Comandaí funciona e como ela pode ser aplicada ao seu estabelecimento.</p>
 
           <a href="#" class="btn btn-primary btn-xl whatsapp-lead" data-source="final">
-            <svg class="ico">
-              <use href="#i-chat" />
-            </svg> FALAR COM O NICOLAS
+            <svg class="ico"><use href="#i-chat"/></svg> FALAR COM O NICOLAS
           </a>
           <small>Sem compromisso. Me chama e eu te mostro o sistema.</small>
         </div>
@@ -421,10 +340,7 @@
 
   <!-- Botão flutuante de WhatsApp -->
   <a href="#" class="wa-float whatsapp-lead" data-source="botao-flutuante" aria-label="Falar com o Nicolas no WhatsApp">
-    <svg>
-      <use href="#i-chat" />
-    </svg>
+    <svg><use href="#i-chat"/></svg>
   </a>
 </body>
-
 </html>

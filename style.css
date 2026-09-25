@@ -109,7 +109,7 @@ ul { padding: 0; list-style: none; }
 .btn-primary:hover .ico { transform: translateX(3px); }
 
 .btn-lg { min-height: 56px; padding: 16px 26px; font-size: 16px; border-radius: 16px; }
-.btn-xl { min-height: 62px; padding: 18px 28px; font-size: 16.5px; border-radius: 18px; width: 100%; }
+.btn-xl { min-height: 62px; padding: 18px 18px; font-size: 16px; border-radius: 18px; width: 100%; letter-spacing: 0.01em; }
 .btn-sm { min-height: 42px; padding: 10px 14px; font-size: 14px; border-radius: 12px; font-weight: 700; letter-spacing: 0; white-space: nowrap; gap: 8px; }
 
 @media (min-width: 560px) {
@@ -147,12 +147,9 @@ ul { padding: 0; list-style: none; }
 .brand-name b { color: var(--accent); font-weight: 800; }
 .brand-name.small { font-size: 18px; }
 
-@media (max-width: 430px) {
-  .hide-xs { display: none; }
-}
-@media (max-width: 330px) {
-  .site-header .btn-sm > span { display: none; }
-  .site-header .btn-sm { width: 44px; padding: 0; }
+/* Mobile: o header fica só com a marca, para não competir com o CTA da hero */
+@media (max-width: 899px) {
+  .header-cta { display: none; }
 }
 
 /* =============================================================
@@ -160,7 +157,7 @@ ul { padding: 0; list-style: none; }
    ============================================================= */
 .hero {
   position: relative; overflow: hidden; isolation: isolate;
-  padding: calc(var(--header-h) + 18px) 0 48px;
+  padding: calc(var(--header-h) + 14px) 0 34px;
 }
 .hero-glow {
   position: absolute; z-index: -1; top: -240px; right: -320px; width: 820px; height: 820px;
@@ -176,11 +173,11 @@ ul { padding: 0; list-style: none; }
   mask-image: radial-gradient(ellipse at 50% 15%, #000 15%, transparent 70%);
   -webkit-mask-image: radial-gradient(ellipse at 50% 15%, #000 15%, transparent 70%);
 }
-.hero-inner { display: grid; gap: 36px; align-items: center; }
+.hero-inner { display: grid; gap: 22px; align-items: center; }
 
 .eyebrow {
   display: inline-flex; align-items: flex-start; gap: 8px;
-  padding: 6px 12px; margin-bottom: 14px;
+  padding: 6px 12px; margin-bottom: 12px;
   border: 1px solid var(--border-strong); border-radius: 12px;
   background: rgba(255,255,255,.03);
   color: var(--text-2); font-size: 12px; font-weight: 600; line-height: 1.4;
@@ -188,23 +185,23 @@ ul { padding: 0; list-style: none; }
 .eyebrow .dot { width: 7px; height: 7px; margin-top: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); flex: none; }
 
 .hero h1 {
-  font-size: clamp(32px, 8.8vw, 62px);
-  line-height: 1.05; letter-spacing: -0.035em; font-weight: 800;
-  margin-bottom: 14px;
+  font-size: clamp(30px, 8.2vw, 60px);
+  line-height: 1.06; letter-spacing: -0.035em; font-weight: 800;
+  margin-bottom: 12px;
 }
-.lead { font-size: clamp(16px, 4.2vw, 19px); color: var(--text-2); max-width: 540px; margin-bottom: 16px; }
+.lead { font-size: clamp(15.5px, 4.1vw, 19px); color: var(--text-2); max-width: 480px; margin-bottom: 14px; }
 
-.hero-checks { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.hero-checks { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 18px; }
 .hero-checks li {
   display: inline-flex; align-items: center; gap: 7px;
-  padding: 7px 12px 7px 9px; border-radius: 999px;
+  padding: 6px 11px 6px 8px; border-radius: 999px;
   background: rgba(255,255,255,.04); border: 1px solid var(--border);
   font-weight: 700; font-size: 13.5px;
 }
 .hero-checks .ico { color: var(--green); width: 18px; height: 18px; padding: 2px; border-radius: 50%; background: rgba(34,197,94,.14); }
 
 .hero-cta { display: flex; flex-direction: column; gap: 12px; }
-.cta-note { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; }
+.cta-note { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13.5px; line-height: 1.4; }
 .cta-note .ico { color: var(--accent); }
 
 @media (max-width: 559px) {
@@ -257,6 +254,17 @@ ul { padding: 0; list-style: none; }
 .float-chip .ico-green { color: var(--green); }
 .chip-1 { top: 20%; left: 0; }
 .chip-2 { top: 58%; right: 0; animation-delay: -3s; }
+/* No celular os selos ficam mais abaixo para não cobrir o topo do cardápio na primeira dobra */
+@media (max-width: 899px) {
+  .chip-1 { top: 46%; }
+  .chip-2 { top: 74%; }
+
+  /* Hero mais curta: menos espaço entre o texto e o mockup, e faixa de status
+     do celular reduzida (ela é escura e era lida como espaço vazio). */
+  .hero-inner { gap: 12px; }
+  .phone-screen { padding-top: 12px; }
+  .phone::before { top: 4px; height: 13px; width: 62px; border-radius: 8px; }
+}
 @keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
 @media (min-width: 900px) {
@@ -264,7 +272,7 @@ ul { padding: 0; list-style: none; }
   .hero-inner { grid-template-columns: 1.1fr 0.9fr; gap: 48px; }
   .eyebrow { font-size: 13px; margin-bottom: 22px; border-radius: 999px; padding: 7px 14px; }
   .hero h1 { margin-bottom: 20px; }
-  .lead { margin-bottom: 22px; }
+  .lead { margin-bottom: 22px; max-width: 540px; }
   .hero-checks { margin-bottom: 30px; }
   .phone-hero { max-width: 320px; }
   .chip-1 { left: 2%; }
@@ -303,7 +311,7 @@ ul { padding: 0; list-style: none; }
 /* =============================================================
    2. EXPLICAÇÃO CURTA
    ============================================================= */
-.intro { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%); }
+.intro { background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%); }
 .cards { display: grid; gap: 12px; }
 .card {
   display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; align-items: start;
